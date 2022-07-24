@@ -1,0 +1,18 @@
+Here in task3 I used "strings yoda-gcc" a binary file compiler using standard gcc with -m32 -g flags enabled to pull out the input corpus from the current directory. I just follow the syntax that I got from the compiler. Here you can see from the table bellow. 
+
+I found two different bugs and a total of 101 crashes with 11 that are unique. Let talk about the two bugs that I found from running aft-fuzz with yoda-afl.
+sig:06 tells us which Unix signal causes the crashes. This signal 06 is SIGABRT that is an abort, which was generated due to running out of memory.
+Sig:11 is a SIGSEV which is indeed a problem. It is a set fault or a segmentation violation. It means that the program assessed a memory location that was not assigned to it. That creates a bug in our program.
+
+The others info are also good to know:
+op:havoc,rep:32 is the description of the mutation used. This means 32 rounds of stacked random tweaks.
+op:arith8,pos:4,val:+13 is the description of the arithmetic used with 4 rounds of stacks random tweaks.
+
+	Input             | Output
+	------------------+-----------------------
+	dest <N> <location>   | Destroy the Base at <location> with N missiles
+	help <N> <location>   | Send N ships to Help at <location> 
+	jedi <N> <location>   | Send N jedi to Resolve at <location> 
+	luke <location>   | Send Luke Skywalker Help at <location> 
+	yoda <location>   | Send Master Yoda himself to Help at <location> 
+               May the Force be with you !!
