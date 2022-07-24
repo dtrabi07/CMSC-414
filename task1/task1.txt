@@ -1,0 +1,7 @@
+The AFL, the American Fuzzy Log is a tool that iteratively and randomly generates inputs with which it tests a target program. It detects a set fault, a Unix signal, illegal instruction. AFL finds bugs in programs and it is a popular topic of research. But in here the input corpus was provided (int)
+
+Here in our task1, The fuzz found one bug id:000000,sig:06,src:000000,op:havoc,rep:8
+op:havoc,rep:8 is the description of the mutation uses. This means 8 rounds of stacked random tweaks
+sig:06 tells us which Unix signal causes the crashes. This signal 06 is SIGABRT that is an abort, which was generated due to running out of memory.
+id:000000 is just the id of the bug
+src:000000 is the source of the bug. 
