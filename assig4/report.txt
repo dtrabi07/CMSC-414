@@ -1,0 +1,53 @@
+The Methodogy and step to decipher the cyphertex
+I empliment the task1.py function to do the work for me.
+I XOR c1bin and c2bin to got the key.
+In this case I use dtrabi07_2.txt and dtrabi07_3 as c1bin and C2bin.
+I then convert it to a bytearray to make the task easy.
+And I XOR my guessbin with the first XOR at offset range.
+The range of the offset is as same of the length of the cyphertext
+I print out some Dec number of the ouput
+I then convert the result in the his ASCII code 
+The words that I guess right are in my_guess.txt. 
+
+Task 2
+This is how I did my decoding 
+File 1
+"But the fact that
+
+line 1: "The world was mine
+line 2: "world was mine"
+Line 12: "livat"
+line 26: "iuses"
+line 32: "wrunt"
+line 58: "me"
+line 31: are m
+line 38  "mchod"
+
+line 3: "esire"
+line 3 :  "convi"
+line 2 : " convince "
+line 5:  " is "
+
+File 2: 
+Line 12: " the "
+line 32: " the " 
+
+File 3
+line 58 : " the "
+line 26 : " the "
+line 38: " " then b"
+
+File 4
+line 4 : 3 " the"
+line 2 : "t the fact"
+
+file 5
+line 2:"world was mine"
+
+file 6
+line 5: he f
+
+task 1
+The function should return a partial decoding of cypertest1 
+depending on if the guess is correct. 
+

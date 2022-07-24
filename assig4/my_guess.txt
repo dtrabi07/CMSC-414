@@ -1,0 +1,2 @@
+The 1st quote in plaintext should be from ciphertext1:
+But the fact that some geniuses were laughed at does not imp 
